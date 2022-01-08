@@ -7,3 +7,10 @@
 - Set object attributes
   - Lock the object so players can't pick it up: `lock box = get:false()`. This blocks the `get` command.
     - Give a special message when someone tries to pick up the object: `set box/get_err_msg = It's way too heavy for you to lift.`
+
+### Create a new room/location
+- Dig a route to a new room: `dig myroom = door to myroom;mydoor,door to outside;out
+  - This creates:
+    -  a new room (myroom)
+    -  a corresponding exit from your current location (door to myroom with alias mydoor)
+    -  an exit from the new location back to your current location (door to outside with alias out)
