@@ -14,3 +14,5 @@
     -  a new room (myroom)
     -  a corresponding exit from your current location (door to myroom with alias mydoor)
     -  an exit from the new location back to your current location (door to outside with alias out)
+- Create an new exit with `open mydoor;door = myhouse`
+  - This creates an exit (mydoor, with alias door) that connects to the location myhouse.
